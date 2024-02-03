@@ -1,0 +1,218 @@
+<!DOCTYPE html >
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="link rel=" stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"">
+        <link rel=" stylesheet" href="./css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="contanier">
+        <!-- Header -->
+        <div class="header-home">
+            <div class="header-home-left">
+                <div class="header-home__image">
+                    <img src="./image/logo.png" alt="Ảnh logo" class="header-home__image--home">
+                </div>
+                <div class="header-home__seach">
+                    <form action="#">
+                        <input class="seach-bar__input" type="text" id="k" name="k" langid="header-search-placeholder"
+                            placeholder="Tìm kiếm..." required="">
+                        <button class="seach-bar__button" type="submit"><i class="fa fa-search"
+                                aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="header-home-right">
+                <div class="header-home__1">
+                    <a href="/dashboard.html" title="" class="header-home-a">
+                        <span><i class="fa fa-home" aria-hidden="true"></i></span>&nbsp
+                        Trang chủ
+                    </a>
+                </div>
+                <div class="header-home__2">
+                    <a id="spanBell" href="/sinh-vien-tin-tuc-thong-bao.html" title="" class="header-home-a"><span>
+                            <i class="fa fa-home" aria-hidden="true"></i></span>&nbspTin tức
+                    </a>
+                </div>
+                <div class="header-home__3">
+                    <div class="header-home__3--dropdown">
+                        <div class="header-home__3-div--image"><img src="./image/avatar.png" alt="avatar"
+                                class="header-home__3-image"></div>
+                        <div class="header-home__3-div--fullname"><a href="#" title="" style="margin-right: 5px;"
+                                class="header-home-a">Nguyễn Duy Bách </a>
+                            <i class="fa fa-caret-down user-account-name-caret-down" aria-hidden="true"
+                                style="color: #667580;font-size: 10px;"></i>
+                        </div>
+                    </div>
+                    <div class="header-home__3--dropdown-element">
+                        <a href="" class="nav-right__dangkihocphan-a" style="color: var(--importain--color);">
+                            <div class="header-home__3--dropdown-element--1">Đăng xuất</div>
+                        </a>
+                        <a href="" class="nav-right__dangkihocphan-a" style="color: var(--importain--color);">
+                            <div class="header-home__3--dropdown-element--1">Đăng xuất</div>
+                        </a>
+                        <a href="" class="nav-right__dangkihocphan-a" style="color: var(--importain--color);">
+                            <div class="header-home__3--dropdown-element--1">Đăng xuất</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- nav -->
+        <div class="nav">
+            <div class="nav-cointainer">
+                <div class="nav-left">
+                    <div class="nav-left-container">
+                        <div class="nav-left-container-header">
+                            <div class="nav-left-container-header-element">
+                                <div class="nav-left-container-header__text">iuh social network</div>
+                   
+                                    <div class="nav-left-container-header__upload" id="uploadbaiviet">
+                                        Đăng bài viết
+                                    </div>
+                          
+                            </div>
+                        </div>
+                        <div class="nav-left-container-header-nav" id="conainer">
+
+
+                        
+                        </div>
+                        <div class="form_dangbai" id="formupload" style="display: none;">
+                          <h1 class="taobaiviet">Tạo bài viết  <span id="dongbaiviet"><i class="fa-regular fa-circle-xmark"></i></span></h1> 
+                          
+                            <div class="nav-left-container-header-nav-container__header">
+                                <div class="nav-left-container-header-nav-container__header-div--image"><img
+                                        src="./image/avatar.png" alt=""
+                                        class="nav-left-container-header-nav-container__header-image"></div>
+                                <div class="nav-left-container-header-nav-container__header-div--right">
+                                    <h1 class="nav-left-container-header-nav-container__header-name">Nguyễn Duy Bách
+                                    </h1>
+                                </div>
+                            </div>
+                            <textarea placeholder="Bạn đang nghĩ gì thế?" class="bandangnghigi" id="bandangnghigi" rows="2"></textarea>
+                            <input type="file" id="chonanh" class="chonanhs">
+                            <label for="chonanh" class="chonanhslable"><img src="./image/anh.png" alt="" class="chonanhsimage"></label>
+
+                            <div class="chon-anh" id="chon-anh">
+                                <!-- <img src="/image/avatar.png" alt="" class="showanhdachon"> -->
+ 
+                            </div>
+
+                            <div class="button-dangbaiviet">
+                                <button id="create-baiviet">
+                                    Đăng
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="nav-right">
+                    <div class="nav-right__lich">
+                        <a class="nav-right__dangkihocphan-a" target="_blank" href="https://dkhp.iuh.edu.vn"
+                            title="Đăng ký học phần" langid="menusinhvien-15-title">
+                            <div class="nav-right__lich-hoc">
+                                <span>Lịch học trong tuần</span>
+                                <div class="nav-right__lich-hoc--element">
+                                    <div class="nav-right__lich-hoc--element-number">
+                                        13
+                                    </div>
+                                    <div class="nav-right__lich-hoc--element-icon">
+                                        <i class="icon fa fa-calendar" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <span>Xem chi tiết</span>
+                            </div>
+                        </a>
+                        <a class="nav-right__dangkihocphan-a" target="_blank" href="https://dkhp.iuh.edu.vn"
+                            title="Đăng ký học phần" langid="menusinhvien-15-title">
+                            <div class="nav-right__lich-thi">
+                                <span>Lịch học trong tuần</span>
+                                <div class="nav-right__lich-hoc--element">
+                                    <div class="nav-right__lich-hoc--element-number">
+                                        0
+                                    </div>
+                                    <div class="nav-right__lich-hoc--element-icon">
+                                        <i class="icon fa fa-calendar" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <span>Xem chi tiết</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav-right__dangkihocphan">
+                        <a class="nav-right__dangkihocphan-a" target="_blank" href="https://dkhp.iuh.edu.vn"
+                            title="Đăng ký học phần" langid="menusinhvien-15-title">
+                            <div class="nav-right__dangkihocphan-inner">
+                                <div class="icon">
+                                    <img src="./image/dkhp.png" alt="">
+                                </div>
+                                <span lang="menusinhvien-15-vt">Đăng ký học phần</span>
+                            </div>
+                        </a>
+                        <a class="nav-right__dangkihocphan-a" target="_blank" href="https://dkhp.iuh.edu.vn"
+                            title="Đăng ký học phần" langid="menusinhvien-15-title">
+                            <div class="nav-right__dangkihocphan-inner">
+                                <div class="icon">
+                                    <img src="./image/ketqua.png" alt="">
+                                </div>
+                                <span lang="menusinhvien-15-vt">Kết quả</span>
+                            </div>
+                        </a>
+                        <a class="nav-right__dangkihocphan-a" target="_blank" href="https://dkhp.iuh.edu.vn"
+                            title="Đăng ký học phần" langid="menusinhvien-15-title">
+                            <div class="nav-right__dangkihocphan-inner">
+                                <div class="icon">
+                                    <img src="./image/ketqua.png" alt="">
+                                </div>
+                                <span lang="menusinhvien-15-vt">Chỉnh sửa thông tin</span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/main.js">
+        document.addEventListener("DOMContentLoaded", function () {
+            var headerHome = document.querySelector(".header-home__3");
+
+            headerHome.addEventListener("click", function () {
+                var dropdownElement = document.querySelector(".header-home__3--dropdown-element");
+
+                // Kiểm tra trạng thái hiển thị của dropdown và thay đổi nó
+                if (dropdownElement.style.display === "block") {
+                    dropdownElement.style.display = "none";
+                } else {
+                    dropdownElement.style.display = "block";
+                }
+            });
+        });
+
+    </script>
+    <script src="/js/dangbaiviet.js"></script>
+
+</body>
+
+</html>

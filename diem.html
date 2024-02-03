@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng nhập</title>
+        <link rel="stylesheet" href="link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"">
+        <link rel="stylesheet" href="./css/diem.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+   <div class="contanier">
+     <!-- Header -->
+     <div class="header-home">
+        <div class="header-home-left">
+            <div class="header-home__image">
+                <img src="./image/logo.png" alt="Ảnh logo" class="header-home__image--home">
+            </div>
+            <div class="header-home__seach">
+                <form action="#">
+                    <input class="seach-bar__input" type="text" id="k" name="k" langid="header-search-placeholder" placeholder="Tìm kiếm..." required="">
+                    <button class="seach-bar__button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="header-home-right">
+            <div class="header-home__1">
+                <a href="/dashboard.html" title="" class="header-home-a">
+                    <span><i class="fa fa-home" aria-hidden="true"></i></span>&nbsp
+                    Trang chủ
+                </a>
+            </div>
+            <div class="header-home__2">
+                <a id="spanBell" href="/sinh-vien-tin-tuc-thong-bao.html" title="" class="header-home-a"><span>
+                    <i class="fa fa-home" aria-hidden="true"></i></span>&nbspTin tức
+               </a>
+            </div>
+            <div class="header-home__3">
+                <div class="header-home__3--dropdown">
+                    <div class="header-home__3-div--image"><img src="./image/avatar.png" alt="avatar" class="header-home__3-image"></div>
+                    <div  class="header-home__3-div--fullname"><a   href="#" title="" style="margin-right: 5px;" class="header-home-a header-home-a--fullname" >Nguyễn Duy Bách </a>
+            <i class="fa fa-caret-down user-account-name-caret-down" aria-hidden="true" style="color: #667580;font-size: 10px;"></i></div>
+        </div>
+        <div class="header-home__3--dropdown-element">
+            <a href="" class="nav-right__dangkihocphan-a" style="color: var(--importain--color);">
+            <div class="header-home__3--dropdown-element--1">Đăng xuất</div>
+            </a>
+            <a href="" class="nav-right__dangkihocphan-a" style="color: var(--importain--color);">
+                <div class="header-home__3--dropdown-element--1">Đăng xuất</div>
+                </a>
+                <a href="" class="nav-right__dangkihocphan-a" style="color: var(--importain--color);">
+                    <div class="header-home__3--dropdown-element--1">Đăng xuất</div>
+                    </a>
+            
+        </div>
+            </div>
+        </div>
+        </div>
+    
+        <!-- nav -->
+    <div class="nav">
+        <div class="nav-container">
+            <div class="nav-container__title">
+                <span>Kết quả học tập</span>
+            </div>
+            <div >
+
+                <table class="border_table">
+                    <thead >
+                        <tr class="nav-container__contten">
+                            <th>
+                                <div class="nav-container__contten--Stt">
+                                    STT
+                                </div>
+                            </th>
+                            <th>
+                                <div class="nav-container__contten--mlhp">
+                                    Mã lớp học phần
+                                </div>
+                            </th>
+                            <th>
+                                <div class="nav-container__contten--mlhp-2">
+                                    Tên môn học/học phần
+                                </div>
+                            </th>
+                            <th>
+                                <div class="nav-container__contten--element">
+                    
+                                    <div class="nav-container__contten--element-bottom">
+                                        Số tín chỉ
+                                    </div>
+                                    <div class="nav-container__contten--element-top">
+                                        <div class="nav-container__contten--element-top-1">
+                                            Tổng
+                                        </div>
+                                        <div class="nav-container__contten--element-top-2-th">
+                                            Thực hành
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </th>
+                            <th>
+                                <div class="nav-container__contten--element-2">
+                    
+                                    <div class="nav-container__contten--element-bottom-2">
+                                        Giữa kì
+                                    </div>
+                                    <div class="nav-container__contten--element-top-2">
+                                        <div class="nav-container__contten--element-top-1-2">
+                                            1
+                                        </div>
+                                        <div class="nav-container__contten--element-top-2-2">
+                                            Chuyên cần
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </th>
+                            <th>
+                                <div class="nav-container__contten--element-2">
+                    
+                                    <div class="nav-container__contten--element-bottom-2">
+                                        Thường kì
+                                    </div>
+                                    <div class="nav-container__contten--element-top-2">
+                                        <div class="nav-container__contten--element-top-1-2">
+                                            1
+                                        </div>
+                                        <div class="nav-container__contten--element-top-2-2">
+                                            Chuyên cần
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </th>
+                            <th>
+                                <div class="nav-container__contten--element-3">
+                                    Cuối kì
+                                </div>
+                            </th>
+                            <th>
+                                <div class="nav-container__contten--element-4">
+                                    Điểm tổng kết
+                                </div>
+                            </th>
+                            <th>
+                                <div class="nav-container__contten--element-4">
+                                    Thang điểm 4
+                                </div>
+                            </th>
+                            <th>
+                                <div class="nav-container__contten--element-3-xeploai">
+                                    Xếp loại
+                                </div>
+                            </th>
+                            <th>
+                                <div class="nav-container__contten--element-5">
+                                    Đạt
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="nav-container__contten-2">
+                            <td class="nav-container__contten--element">
+                                HK1 (2022-2023)
+                            </td>
+                        </tr>
+                        <tr class="nav-container__contten-3">
+                            <td class="nav-container__contten--Stt-1">
+                                1
+                            </td>
+                            <td class="nav-container__contten--mlhp-2-td">
+                                2
+                            </td>
+                            <td class="nav-container__contten--mlhp-2-td-3">
+                                3
+                            </td>
+                            <td class="nav-container__contten--mlhp-2-td-4">
+                                4
+                            </td>
+                            <td class="nav-container__contten--mlhp-2-td-5">
+                                5
+                            </td>
+                            <td class="nav-container__contten--mlhp-2-td-5">
+                                6
+                            </td>
+                            <td class="nav-container__contten--mlhp-2-td-6">
+                                7
+                            </td>
+                            <td class="nav-container__contten--mlhp-2-td-7">
+                                8
+                            </td>
+                            <td class="nav-container__contten--mlhp-2-td-7">
+                                9
+                            </td>
+                            <td class="nav-container__contten--mlhp-2-td-8">
+                                Trung bình yếu
+                            </td>
+                            <td class="nav-container__contten--mlhp-2-td-6">
+                                7
+                            </td>
+                        </tr>
+                        <!-- edit -->
+                        <tr class="nav-container__contten-4">
+                            <td class="nav-container__contten--element-4-kq">
+                                Điểm trung bình học kỳ hệ 10: 
+                                <span>6,80</span>
+                            </td>
+                            <td class="nav-container__contten--element-4-kq-4">
+                                Điểm trung bình học kỳ hệ 4: 
+                                <span>6,80</span>
+                            </td>
+                        </tr>
+                        <tr class="nav-container__contten-4">
+                            <td class="nav-container__contten--element-4-kq">
+                                Điểm trung bình tích lũy:
+                                <span>6,80</span>
+                            </td>
+                            <td class="nav-container__contten--element-4-kq-4">
+                                Điểm trung bình tích lũy (hệ 4): 
+                                <span>6,80</span>
+                            </td>
+                        </tr>
+                        <tr class="nav-container__contten-4">
+                            <td class="nav-container__contten--element-4-kq">
+                                Tổng số tín chỉ đã đăng ký: 
+                                <span>6,80</span>
+                            </td>
+                            <td class="nav-container__contten--element-4-kq-4">
+                                Tổng số tín chỉ tích lũy: 
+                                <span>6,80</span>
+                            </td>
+                        </tr>
+                        <tr class="nav-container__contten-4">
+                            <td class="nav-container__contten--element-4-kq">
+                                Tổng số tín chỉ đạt: 
+                                <span>6,80</span>
+                            </td>
+                            <td class="nav-container__contten--element-4-kq-4">
+                                Tổng số tín chỉ nợ tính đến hiện tại:
+                                <span>6,80</span>
+                            </td>
+                        </tr>
+                        <tr class="nav-container__contten-4">
+                            <td class="nav-container__contten--element-4-kq">
+                                Xếp loại học lực tích lũy: 
+                                <span>6,80</span>
+                            </td>
+                            <td class="nav-container__contten--element-4-kq-4">
+                                Xếp loại học lực học kỳ: 
+                                <span>6,80</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                    
+            
+                </table>
+                
+            </div>
+
+        </div>
+    </div>
+   
+       
+   </div>
+
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    var headerHome = document.querySelector(".header-home__3");
+    var container = document.querySelector(".contanier");
+    headerHome.addEventListener("click", function () {
+        var dropdownElement = document.querySelector(".header-home__3--dropdown-element");
+
+        // Kiểm tra trạng thái hiển thị của dropdown và thay đổi nó
+        if (dropdownElement.style.display === "block") {
+            dropdownElement.style.display = "none";
+        } else {
+            dropdownElement.style.display = "block";
+        }
+    });
+    container.addEventListener("click", function () {
+        dropdownElement.style.display = "none";
+    });
+
+});
+
+   </script>
+    
+</body>
+</html>
